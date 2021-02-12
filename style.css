@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #5558c9;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+}
+body {
+    background-color: #e7f1ff;
+    color: #a0acb5;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+.wrapper .resume {
+    width: 450px;
+    margin: 5px auto;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125),-1px -1px 2px rgba(0,0,0,0.125);
+}
+.wrapper .resume .profile-info {
+    text-align: center;
+}
+.wrapper .resume .profile-info .profile-image {
+    width: 100px;
+    margin: 0px auto 5px;
+}
+.wrapper .resume .profile-info .profile-image img {
+    display: block;
+    width: 100%;
+}
+.wrapper .resume .profile-info .profile-data .name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Trade Winds',cursive;
+}
+.wrapper .resume .profile-info .profile-data span {
+    color: #697c8e;
+}
+.wrapper .resume .profile-info .view-more-button a {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 125px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+.wrapper .resume .profile-info .view-more-button a:hover {
+    background-color: #7377ff;
+}
+.wrapper .resume .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+}
+.wrapper .resume .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.wrapper .resume .skills ul li {
+    padding: 0px 5px 10px;
+    width: 33.32%;
+    height: 85px;
+}
+.wrapper .resume .skills ul li .skill-item {
+    background-color: #f3f4f5;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    text-align: center;
+    padding: 15px 10px;
+}
+.wrapper .resume .skills ul li .skill-item.html .icon .fa-html5 {
+    color: orangered;
+}
+.wrapper .resume .skills ul li .skill-item.css .icon .fa-css3 {
+    color: lightskyblue;
+}
+.wrapper .resume .skills ul li .skill-item.sass .icon .fa-sass {
+    color: pink;
+}
+.wrapper .resume .skills ul li .skill-item.javascript .icon .fa-js {
+    color: yellow;
+}
+.wrapper .resume .skills ul li .skill-item.bootstrap .icon .fa-bootstrap {
+    color: purple;
+}
+.wrapper .resume .full-info-wrap .tabs ul {
+    display: flex;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #dfe4e6;
+    border-radius: 3px;
+}
+.wrapper .resume .full-info-wrap .tabs ul li {
+    padding: 10px 15px;
+    width: 33.34%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #dfe4e6;
+    background-color: #f2f4f5;
+    color: #a0acb5;
+    font-weight: 600;
+    cursor: pointer;
+}
+.wrapper .resume .full-info-wrap .tabs ul li:last-child {
+    border-right: 0px;
+}
+.wrapper .resume .full-info-wrap .tabs ul li:hover,.wrapper .resume .full-info-wrap .tabs ul li.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.wrapper .resume .full-info {
+    padding-top: 15px;
+    height: 295px;
+    overflow: auto;
+}
+.wrapper .resume .full-info .education {
+    display: none;
+}
+.wrapper .resume .full-info .info-wrap {
+    padding-left: 5px;
+}
+.wrapper .resume .full-info .info-wrap ul li {
+    margin-bottom: 10px;
+}
+.wrapper .resume .full-info .info-wrap ul li:last-child {
+    margin-bottom: 0px;
+}
+.wrapper .resume .full-info .info-wrap ul li .sub-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7377ff;
+}
+.wrapper .resume .full-info .info-wrap ul li .info-item {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.wrapper .resume .full-info .info-wrap ul li .info-item .info-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.wrapper .resume .full-info .info-wrap ul li .info-item .data {
+    font-size: 12px;
+}
+.wrapper .resume .full-info .contact {
+    display: none;
+}
+.wrapper .resume .contact .info-wrap ul li span {
+    display: inline-block;
+}
+.wrapper .resume .contact .info-wrap ul li span.info-contact {
+    width: 150px;
+}
+.wrapper .resume .contact .info-wrap ul li span.info-address {
+    font-weight: 600;
+}
